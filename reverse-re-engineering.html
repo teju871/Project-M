@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse / Re-Engineering</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/animation.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnify.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <style type="text/css">
+        .iconsize{
+            max-height: 150px !important;
+        }
+    </style>
+</head>
+
+<body class="active-dark-mode">
+    <main class="page-wrapper">
+
+        <!-- Start Header Area  -->
+        <header class="rn-header header-default header-not-transparent header-sticky">
+            <div class="container position-relative">
+                <div class="row align-items-center row--0">
+                    <div class="col-lg-3 col-md-6 col-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="logo-light" src="assets/images/logo/merrit-dark.png" alt="Corporate Logo">
+                                <img class="logo-dark" src="assets/images/logo/merrit.png" alt="Corporate Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-6 col-8 position-static">
+                        <div class="header-right">
+                            <nav class="mainmenu-nav d-none d-lg-block">
+                                <ul class="mainmenu">
+                                    <li class="has-droupdown has-menu-child-item"><a href="index.html">Home</a>
+                                      
+                                    </li>
+									<li class="has-droupdown has-menu-child-item"><a href="#">Industries</a>
+										<ul class="submenu">
+                                            <li><a href="transportation.html">Transportation </a></li>
+                                            <li><a href="industrial.html">Industrial</a></li>
+                                            <li><a href="consumer-healthcare.html">Consusmer & Healthcare</a></li>
+                                            <li><a href="aerospace-defence.html">Aerospace & Defence</a></li>
+											<li><a href="energy.html">Energy</a></li>
+
+                                        </ul>
+                                       
+                                    </li>
+									
+                                    <li class="has-droupdown has-menu-child-item"><a href="#">Services</a>
+									
+                                        <ul class="submenu">
+											<li class="has-droupdown1 has-menu-child-item1"><a href="new-product-development.html">New Product Development</a>
+                                            
+                                            	<ul class="submenu1">
+                                                    
+                                                    <li><a href="CAD.html">CAD </a></li>
+                                                    <li><a href="CAE.html">CAE</a></li>
+                                                    <li><a href="electricals-electronics.html">Electricals, electronics & firmware</a></li>
+                                                    <li><a href="prototype-testing.html">Prototype & testing</a></li>
+                                                    <li><a href="technical-publications.html">Technical publications</a></li>
+                                                    <li><a href="should-costing.html">Should costing</a></li>
+
+                                                </ul>
+                                            
+                                            </li>
+                                            <li class="has-droupdown1 has-menu-child-item1">
+                                                <a href="#">IIoT(industrial internet of things)</a>
+                                            
+                                            	<ul class="submenu1">
+                                                    <li><a href="CAD.html">CAD </a></li>
+                                                    <li><a href="CAE.html">CAE</a></li>
+                                                    <li><a href="electricals-electronics.html">Electricals, electronics & firmware</a></li>
+                                                    <li><a href="prototype-testing.html">Prototype & testing</a></li>
+                                                    <li><a href="technical-publications.html">Technical publications</a></li>
+                                                    <li><a href="should-costing.html">Should costing</a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                            <li><a href="material-handling.html">Material Handling</a></li>
+                                            <li><a href="reverse-re-engineering.html">Reverse / Re-Engineering</a></li>
+                                            <li><a href="should-costing.html">Should Costing</a></li>
+                                            <li><a href="supply-chain-third-party-inspection.html">Supply chain management &third party inspection</a></li>
+											<li><a href="staffing-services.html">Staffing Servcies</a></li>
+											<li><a href="#">Training Development</a></li>
+											
+                                            
+                                        </ul>
+										
+										</li>
+                                 
+									  <li class="has-droupdown has-menu-child-item"><a href="#">Careers</a>
+                                      
+                                    </li>
+
+                                    <li class="has-droupdown has-menu-child-item"><a href="#">About Us</a>
+                                        <ul class="submenu">
+                                              <li><a href="about.html">About Us</a></li>
+                                              <li><a href="management-team.html">Management Team </a></li>
+                                              <li><a href="global-presence.html">Global Presence </a></li>
+                                               <li><a href="news-feed.html">News Feed</a></li>
+                                              
+                                          </ul>
+                                      </li>
+                                   
+                                </ul>
+
+
+                            </nav>
+                            <!-- Start Header Btn  -->
+                            <div class="header-btn"><a href="getintouch.html" class="btn-default btn-small round">Get in
+                                Touch</a>
+                            </div>
+                        <!-- End Header Btn  -->
+
+                        <!-- Start Mobile-Menu-Bar -->
+                        <div class="mobile-menu-bar ml--5 d-block d-lg-none">
+                            <div class="hamberger">
+                                <button class="hamberger-button">
+                                    <i class="feather icon-align-justify"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <img src="socialmediaicons\merrit-logo.svg" style="width:90px;padding-top: 20px;  padding-left: 20px;">
+            <div class="header-top">
+                <div class="close-menu">
+                </div>
+            </div>
+            <ul class="mainmenu">
+                <li class="has-droupdown has-menu-child-item"><a href="index.html">Home</a>
+                <li class="with-megamenu has-menu-child-item"><a href="industrial-consumer.html">Industries</a>
+                    <div class="rn-megamenu">
+                        <div class="wrapper">
+                            <div class="row row--0">
+                                <div class="col-lg-3 single-mega-item">
+                                    <ul class="mega-menu-item">
+                                        <li><a href="transportation.html">Transportation</a></li>
+                                        <li><a href="industrial.html">Industrial</a></li>
+                                        <li><a href="consumer-healthcare.html">Consumer & Healthcare</a></li>
+                                        <li><a href="aerospace-defence.html">Aerospace Defence</a></li>
+                                        <li><a href="energy.html">Energy</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="has-droupdown has-menu-child-item"><a href="service.html">Services</a>
+                    <ul class="submenu">
+                        <li><a href="new-product-development.html">New Product Development</a></li>
+                        <li><a href="industrial-IOT.html">IIOT(Industrial Internet of Things)</a></li>
+                        <li><a href="material-handling.html">Material Handling</a></li>
+                        <li><a href="reverse-re-engineering.html">Reverse/Re-Engineering</a></li>
+                        <li><a href="should-costing.html">Should Costing</a></li>
+                        <li><a href="supply-chain-third-party-inspection.html">Supply Chain Management & Third Party
+                                Inspection</a></li>
+                        <li><a href="staffing-services.html">Staffing Services</a></li>
+                        <li><a href="training-development.html">Training Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li class="has-droupdown has-menu-child-item"><a href="about.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="management-team.html">Management Team</a></li>
+                        <li><a href="global-presence.html">Global Presence</a></li>
+                        <li><a href="news-feed.html">News Feed</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+        <!-- Start Slider Area  -->
+        <div class="slider-area slider-style-1 variation-default height-600 bg_image bg_image-reverseengg"
+            data-black-overlay="2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="inner pt--80 text-left" data-sal="slide-up" data-sal-duration="400"
+                            data-sal-delay="150">
+                            <div>
+                                <h3 class="rn-sub-badge"><span class="theme-gradient">Capabilities</span></h3>
+                            </div>
+                            <h1 class="title display-one">Reverse / <br>Re-Engineering</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slider Area  -->
+
+        <div class="rwt-split-area" style="background:#15141c;">
+            <div class="wrapper">
+                <div class="rn-splite-style">
+                    <div class="split-wrapper">
+                        <div class="row g-0 radius-10 align-items-center">
+
+                            <div class="col-lg-12 col-xl-6 col-12 " data-sal="slide-left" data-sal-duration="800">
+                                <div class="split-inner">
+
+
+                                    <h2 class="title sal-animate"> Reverse / Re-engineering </strong>
+                                    </h2>
+                                    <h4>Merritt team With 300 person-years of experience, the Merritt team has successfully executed the reverse engineering of more than 1000 components in Aerospace, Automotive, IIoT, Consumer goods and Industrial products.
+
+                                        <h4>
+                                            <p> Our expertise in reverse engineering enables customers to explore design reuse opportunities, product cost optimization, and better functions and features at a quicker turnaround time. </p>
+                                            
+                                            <!--<div class="view-more-button mt--35 sal-animate" data-sal="slide-up"
+                                                data-sal-duration="700" data-sal-delay="300">
+                                                <a class="btn-default" style="border: 2px solid #fff;" href="#">Contact
+                                                    Us</a>
+                                            </div>-->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-xl-6 col-12" data-sal="slide-right" data-sal-duration="800">
+                                <div class="thumbnail image-left-content">
+                                    <img src="assets/images/services/reverse-engineering1.jpg" alt="split Images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="background-color: #0327c9;" class="rwt-split-area bg1">
+            <div class="wrapper">
+                <div class="rn-splite-style">
+                    <div class="split-wrapper">
+                        <div class="row g-0 radius-10 align-items-center">
+
+                            <div class="col-lg-12 col-xl-6 col-12" data-sal="slide-right" data-sal-duration="800">
+                                <div class="thumbnail image-left-content">
+                                    <img src="assets/images/services/reverse-engineering2.jpg" alt="split Images">
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12 col-xl-6 col-12 " data-sal="slide-left" data-sal-duration="800">
+                                <div class="split-inner">
+
+
+                                    
+                                    <h4>We generate complete engineering details about the product, such as geometric dimensions, 3D CAD models, material specifications, and surface/heat treatment details, microstructures, assemblies, mechanisms, BOM and detailed manufacturing drawings.
+
+                                        <h4>
+
+                                            <!--<div class="view-more-button mt--35 sal-animate" data-sal="slide-up"
+                                                data-sal-duration="700" data-sal-delay="300">
+                                                <a class="btn-default" style="border: 2px solid #fff;" href="#">Read
+                                                    more</a>
+                                            </div>-->
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rn-service-area rn-section-gap bg ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                           
+                            <div class="animated fadeInUp" style="animation-duration: 1s;">
+                                <h3 class="title w-600 mb--20">Hands on experience</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--15 service-wrapper">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="animated fadeInUp" style="animation-duration: 1s;">
+                            <div class="service text-center">
+                                <div class="inner gradient1">
+                                    <div class="image"><img src="assets/images/services/Tear-down-analysis.svg" alt="card Images" class="iconsize"></div>
+                                    <div class="content">
+                                        <p class="title"><a href="/service#service">Tear down analysis of the assemblies</a></p>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="animated fadeInUp" style="animation-duration: 1s;">
+                            <div class="service gradient1 text-center">
+                                <div class="inner">
+                                    <div class="image"><img src="assets/images/services/product-data-capturing.svg" alt="card Images" class="iconsize"></div>
+                                    <div class="content">
+                                        <p class="title"><a href="/service#service">100 % product data capturing on form fit and functions and BOM</a></p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="animated fadeInUp" style="animation-duration: 1s;">
+                            <div class="service gradient1 text-center">
+                                <div class="inner">
+                                    <div class="image"><img src="assets/images/services/Digital-3D-model.svg" alt="card Images" class="iconsize"></div>
+                                    <div class="content">
+                                        <p class="title"><a href="/service#service">Digital 3D model of close 99% accuracy </a></p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="animated fadeInUp" style="animation-duration: 1s;">
+                            <div class="service gradient1 text-center">
+                                <div class="inner">
+                                    <div class="image"><img src="assets/images/services/kinematic-positions.svg" alt="card Images" class="iconsize"></div>
+                                    <div class="content">
+                                        <p class="title"><a href="/service#service">Data capture of kinematic positions of intricate mechanisms</a></p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="animated fadeInUp" style="animation-duration: 1s;">
+                            <div class="service gradient1 text-center">
+                                <div class="inner">
+                                    <div class="image"><img src="assets/images/services/CT-scan.svg" alt="card Images" class="iconsize"></div>
+                                    <div class="content">
+                                        <p class="title"><a href="/service#service">Non destructive methodologies for data capturing like CT scan, radiography, ultrasonic test, magnetic particle, electronic microscope and gear measurement</a></p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="animated fadeInUp" style="animation-duration: 1s;">
+                            <div class="service gradient1 text-center">
+                                <div class="inner">
+                                    <div class="image"><img src="assets/images/services/Inhouse-metrology-laboratory.svg" alt="card Images" class="iconsize"></div>
+                                    <div class="content">
+                                        <p class="title"><a href="/service#service">Inhouse metrology laboratory</a></p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rn-service-area bg ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                           
+                            <div class="animated fadeInUp" style="animation-duration: 1s;">
+                                <h2 class="title w-600 mb--20">Reverse / Re-engineering process
+                                </h2>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--15 service-wrapper">
+                  
+                    <img src="assets/images/services/reverse-engg.png">
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--<div class="about-area about-style-4 rn-section-gap">
+            <div class="container">
+                <div class="row row--40 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="video-btn">
+                            <div class="video-popup icon-center">
+                                <div class="overlay-content">
+                                    <div class="thumbnail"><img class="radius-small" src="assets/images/about/shouldcost.jpg" alt="Corporate Image"></div>
+                                   
+                                </div>
+                            </div>
+                            <div class="video-lightbox-wrapper"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt_md--40 mt_sm--40">
+                        <div class="content">
+                            <div class="inner">
+                                <h3 class="title">Aerospace </strong>
+                                </h3>
+                               <h4>Merritt developing and supplying many defence products through its customers. Recently Merritt developed the portable outdoor pneumatic masts used in defence fordeploying the communication and surveillance devices.Two design variants to lift payloads of 50 kg and 100 kg. Individual mast can be carried by two army personnel and canbe operated by low pressure compressors or foot pump.<h4><p> Product development includes bench marking, deriving the optimal specifications&modular calculations, detailed design, structural analysis for dead loads and wind loads, proto development and testing as per the JSS-55555 standard. Supplied to Indian defence and successfully deployed at strategic locations.
+							   </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+
+
+        <!--<div class="about-area about-style-4 ">
+            <div class="container">
+                <div class="row row--40 align-items-center">
+                   
+                    <div class="col-lg-6 mt_md--40 mt_sm--40">
+                        <div class="content">
+                            <div class="inner">
+                                <h3 class="title">Defence </strong>
+                                </h3>
+                               <h4>Merritt developing and supplying many defence products through its customers. Recently Merritt developed the portable outdoor pneumatic masts used in defence fordeploying the communication and surveillance devices.Two design variants to lift payloads of 50 kg and 100 kg. Individual mast can be carried by two army personnel and canbe operated by low pressure compressors or foot pump.<h4><p>Product development includes bench marking, deriving the optimal specifications&modular calculations, detailed design, structural analysis for dead loads and wind loads, proto development and testing as per the JSS-55555 standard. Supplied to Indian defence and successfully deployed at strategic locations.
+
+							   </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+					
+					 <div class="col-lg-6">
+                        <div class="video-btn">
+                            <div class="video-popup icon-center">
+                                <div class="overlay-content">
+                                    <div class="thumbnail"><img class="radius-small" src="assets/images/about/shouldcost.jpg" alt="Corporate Image"></div>
+                                    
+                                </div>
+                            </div>
+                            <div class="video-lightbox-wrapper"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+
+
+
+
+
+
+
+        <!-- Start Service Area  -->
+
+        <!-- End Service Area  -->
+
+
+
+
+
+
+
+
+        <!-- Start Seperator Area  -->
+        <div class="rbt-separator-mid">
+            <div class="container">
+                <hr class="rbt-separator m-0">
+            </div>
+        </div>
+
+        <!-- Section separator  -->
+
+        <div class="rbt-separator-mid">
+            <div class="container">
+                <hr class="rbt-separator m-0">
+            </div>
+        </div>
+        <!-- End Seperator Area  -->
+
+
+        <!-- Start Team Area  -->
+
+        <!-- End Team Area  -->
+
+
+
+
+
+
+        <!-- Start Footer Area  -->
+ 
+        <section class="footers bg-dark pt-3 pb-3 "style="background:#000 !important">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 footers-one">
+                         <div class="footers-logo">
+                             <img src="socialmediaicons\merrit-logo.svg" alt="Logo" style="width: 90px;">
+                         </div>
+                         
+                         <div class="footers-info mt-3">
+                             <p style="color: #004eff;font-size:large;margin: 0px; padding:0px;">Merritt Innovative Solutions<br>
+                                 India Pvt.Ltd.</p>
+                             <p1 style="color: aliceblue; font-size:smaller; margin: 0px; padding:0px;">#277, 4th Main, 4th Phase,<br>
+                                 Peenya Industrial Area,<br>
+                                 Bengaluru-560 058</p1>
+                         </div>
+                         <br>
+                         <div class="social-icons" > 
+                       
+                         <a href="https://www.facebook.com/"><img src="socialmediaicons\facebook.png"></a>
+                         <a href="https://www.youtube.com/"><img src="socialmediaicons\youtube.png"></a>
+                         <a href="https://www.twitter.com/"><img src="socialmediaicons\twitter.png"></a>
+                        
+                     </div>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-two">
+                         <h5 style="color:blue;">Industries </h5>
+                         <ul class="list-unstyled">
+                          <li><a href="transportation.html">Transportation</a></li>
+                          <li><a href="industrial.html">Industrial</a></li>
+                          <li><a href="consumer-healthcare.html">Consumer & Healthcare</a></li>
+                          <li><a href="aerospace-defence.html">Aerospace & Defence</a></li>
+                          <li><a href="energy.html">Energy</a></li>
+                         </ul>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footers-three ">
+                         <h5 style="color:blue;">Services </h5>
+                         <ul class="list-unstyled">
+                          <li><a href="new-product-development.html">New Product Development</a></li>
+                          <li><a href="industrial-IOT.html">IIOT(Industrial Internet Of things)</a></li>
+                          <li><a href="material-handling.html">Material Handling</a></li>
+                          <li><a href="reverse-re-engineering.html">Reverse/Re-Engineering</a></li>
+                          <li><a href="should-costing.html">Should Costing</a></li>
+                          <li><a href="supply-chain-third-party-inspection.html">Supply Chain management & Third Party Inspection</a></li>
+                          <li><a href="staffing services.html">Staffing Services</a></li>
+                          <li><a href="training development.html">Training Development</a></li>
+         
+                         </ul>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-four">
+                         <h5 style="color:blue;">About Us  </h5>
+                         <ul class="list-unstyled">
+                          <li><a href="about.html">Overview</a></li>
+                          <li><a href="management-team.html">Management Team</a></li>
+                          <li><a href="global-presence.html">Global Presence</a></li>
+                          <li><a href="news-feed.html">News Feed</a></li>
+                         </ul>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-five">
+                         <h5><a href="index.html">Home</a></h5>
+                         <ul class="list-unstyled">
+                          <li><a href="careers.html">Careers</a></li>
+                          <li><a href="getintouch.html">Get In Touch</a></li>
+                         </ul>
+                     </div>
+                     
+                </div>
+            </div>
+         </section>
+         
+         <section class="copyright " style="background-color: #000;border-top: 1px solid #333;">
+             <div class="container">
+                 <div class="row text-left ">
+                     <div class="col-md-12 pt-3">
+                         <p class="text-muted">© Merritt 2023. All rights reserved.</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
+    </main>
+
+
+
+
+    <!-- All Scripts  -->
+    <!-- Start Top To Bottom Area  -->
+    <div class="rn-back-top">
+        <i class="feather icon-arrow-up"></i>
+    </div>
+    <!-- End Top To Bottom Area  -->
+    <!-- JS
+============================================ -->
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/waypoint.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/masonry.js"></script>
+    <script src="assets/js/vendor/imageloaded.js"></script>
+    <script src="assets/js/vendor/magnify.min.js"></script>
+    <script src="assets/js/vendor/lightbox.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/easypie.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/jquery.style.swicher.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
